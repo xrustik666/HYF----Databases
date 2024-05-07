@@ -4,8 +4,7 @@ const mysql = require('mysql2');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'hyfuser',
-  password: 'hyfpassword',
-  database: 'userdb'
+  password: 'hyfpassword'
 });
 
 // Create and connect to the meetup database
