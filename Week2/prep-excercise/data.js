@@ -1,4 +1,4 @@
-const recipes = [
+export const recipes = [
   {
     recipeName: 'No-Bake Cheesecake'
   },
@@ -13,7 +13,7 @@ const recipes = [
   }
 ];
 
-const categories = [
+export const categories = [
   {
     categoryName: 'No-Bake'
   },
@@ -34,7 +34,7 @@ const categories = [
   }
 ];
 
-const ingredients = [
+export const ingredients = [
   {
     ingredientName: 'Condensed milk'
   },
@@ -91,7 +91,7 @@ const ingredients = [
   }
 ];
 
-const steps = [
+export const steps = [
   {
     stepDescription: 'Beat Cream Cheese'
   },
@@ -160,7 +160,7 @@ const steps = [
   },
 ];
 
-const recipeCategories = [
+export const recipeCategories = [
   { recipeId: 1, categoryId: 1 },
   { recipeId: 1, categoryId: 2 },
   { recipeId: 1, categoryId: 3 },
@@ -171,7 +171,7 @@ const recipeCategories = [
   { recipeId: 4, categoryId: 6 },
 ];
 
-const recipeIngredients = [
+export const recipeIngredients = [
   { recipeId: 1, ingredientId: 1 },
   { recipeId: 1, ingredientId: 2 },
   { recipeId: 1, ingredientId: 3 },
@@ -197,7 +197,7 @@ const recipeIngredients = [
   { recipeId: 4, ingredientId: 10 },
 ];
 
-const recipeSteps = [
+export const recipeSteps = [
   { recipeId: 1, stepId: 1 },
   { recipeId: 1, stepId: 2 },
   { recipeId: 1, stepId: 3 },
@@ -221,13 +221,3 @@ const recipeSteps = [
   { recipeId: 4, stepId: 21 },
   { recipeId: 4, stepId: 22 },
 ];
-
-export {
-  recipes, 
-  categories, 
-  ingredients, 
-  steps, 
-  recipeCategories, 
-  recipeIngredients, 
-  recipeSteps
-};
