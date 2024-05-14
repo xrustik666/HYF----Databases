@@ -1,3 +1,5 @@
+// Exercise 4: Aggregate Functions
+
 import { connection } from './dbConnection.js';
 
 // Connect to the database and select the database

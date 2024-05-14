@@ -1,3 +1,5 @@
+// Exercise 2: Relationships
+
 import { connection } from './dbConnection.js';
 
 // Connect to the database and select the database

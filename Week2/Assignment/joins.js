@@ -1,3 +1,5 @@
+// Exercise 3: Joins
+
 import { connection } from './dbConnection.js';
 
 // Connect to the database and select the database

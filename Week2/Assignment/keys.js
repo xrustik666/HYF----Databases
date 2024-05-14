@@ -1,3 +1,5 @@
+// Exercise 1: Keys
+
 import { connection } from './dbConnection.js';
 
 // Create and connect to the database
