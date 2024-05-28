@@ -20,8 +20,18 @@ function useDatabase() {
 }
 
 function createTables() {
-  const account = `CREATE TABLE IF NOT EXISTS account (account_number INT PRIMARY KEY, balance DECIMAL(10, 2) NOT NULL)`;
-  const accountChanges = `CREATE TABLE IF NOT EXISTS account_changes (change_number INT AUTO_INCREMENT PRIMARY KEY, account_number INT NOT NULL, amount DECIMAL(10, 2) NOT NULL, changed_date DATETIME NOT NULL, remark VARCHAR(255), FOREIGN KEY (account_number) REFERENCES account(account_number))`;
+  const account = `CREATE TABLE IF NOT EXISTS account (
+    account_number INT PRIMARY KEY, 
+    balance DECIMAL(10, 2) NOT NULL
+  )`;
+  const accountChanges = `CREATE TABLE IF NOT EXISTS account_changes (
+    change_number INT AUTO_INCREMENT PRIMARY KEY, 
+    account_number INT NOT NULL, 
+    amount DECIMAL(10, 2) NOT NULL, 
+    changed_date DATETIME NOT NULL, 
+    remark VARCHAR(255), 
+    FOREIGN KEY (account_number) REFERENCES account(account_number)
+  )`;
 
   connection.query(account, (err, results) => {
     if (err) throw err;
